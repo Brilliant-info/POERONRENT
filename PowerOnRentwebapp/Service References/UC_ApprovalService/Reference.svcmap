@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f30654d7-45aa-4f32-9a88-7b8895d7197d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.Approval/UC_ApprovalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UC_ApprovalService1.xsd" MetadataType="Schema" ID="0780bfc0-3f01-46d0-b2a2-8276938bc564" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Approval/UC_ApprovalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UC_ApprovalService1.disco" MetadataType="Disco" ID="c0e560cf-a744-44ea-87fb-3758c093a754" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Approval/UC_ApprovalService.svc?disco" />
+    <MetadataFile FileName="UC_ApprovalService1.wsdl" MetadataType="Wsdl" ID="518b48ad-93ed-4fc3-8d2d-083bc71dd3c9" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Approval/UC_ApprovalService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ffab6edd-bd15-4005-bc43-52858b6f4929" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.Inbox/InboxService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InboxService.xsd" MetadataType="Schema" ID="91c0f251-2a88-4a2f-83e7-4a3d1c71221c" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Inbox/InboxService.svc?xsd=xsd0" />
+    <MetadataFile FileName="InboxService.wsdl" MetadataType="Wsdl" ID="b8a3ad56-40e7-4110-b391-8c28ac2aaee9" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Inbox/InboxService.svc?wsdl" />
+    <MetadataFile FileName="InboxService.disco" MetadataType="Disco" ID="2091dcb6-c6c7-4662-b1a8-5a5e88208a5f" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Inbox/InboxService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ea438006-2451-4d94-937a-403bfcac6479" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.UserManagement/RoleMasterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RoleMasterService1.xsd" MetadataType="Schema" ID="3f78e597-9bf8-42c8-9ab5-a0af624b286a" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.UserManagement/RoleMasterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="RoleMasterService1.disco" MetadataType="Disco" ID="695d1187-4e37-4799-9d48-a41052903f4a" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.UserManagement/RoleMasterService.svc?disco" />
+    <MetadataFile FileName="RoleMasterService1.wsdl" MetadataType="Wsdl" ID="6a8cce09-617b-4b33-be53-8b6996e60c39" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.UserManagement/RoleMasterService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

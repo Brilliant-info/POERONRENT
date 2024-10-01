@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a7e79de2-4131-47f1-bc6b-baed7f9c7152" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.UserManagement/UserCreationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserCreationService1.disco" MetadataType="Disco" ID="3814fcc4-224f-467a-b092-4b8e742dfd7d" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.UserManagement/UserCreationService.svc?disco" />
+    <MetadataFile FileName="UserCreationService1.xsd" MetadataType="Schema" ID="51c1c3c6-cad0-4017-af70-9e33125c1854" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.UserManagement/UserCreationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserCreationService1.wsdl" MetadataType="Wsdl" ID="92439f6a-2fe2-4c3a-9874-958ea54bf923" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.UserManagement/UserCreationService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

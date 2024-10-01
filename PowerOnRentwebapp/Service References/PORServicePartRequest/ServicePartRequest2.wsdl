@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePartRequest" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://elegantcrm.com/poweronrentservices/Service.PowerOnRent/ServicePartRequest.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iPartRequest_GetRequestHeadByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestHeadByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestHeadByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestHeadByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetIntoPartRequestHead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoPartRequestHead" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SetIntoPartRequestHead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetIntoPartRequestHeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetStatusListForRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForRequest" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetStatusListForRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusListForRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestPartDetailByRequestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestPartDetailByRequestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestPartDetailByRequestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ClearTempDataFromDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDB" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_ClearTempDataFromDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearTempDataFromDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetExistingTempDataBySessionIDObjectName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectName" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetExistingTempDataBySessionIDObjectName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingTempDataBySessionIDObjectNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AddPartIntoRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_AddPartIntoRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartIntoRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_RemovePartFromRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_RemovePartFromRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePartFromRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempData" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_UpdatePartRequest_TempData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartRequest_TempDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSaveRequestPartDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveRequestPartDetail" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_FinalSaveRequestPartDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalSaveRequestPartDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByUserID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayBySiteIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayBySiteIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayBySiteIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayBySiteIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByRequestIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByRequestIDs" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetRequestSummayByRequestIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestSummayByRequestIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SaveApprovalStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovalStatus" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_SaveApprovalStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovalStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsByReqestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsByReqestID" />
+  </wsdl:message>
+  <wsdl:message name="iPartRequest_GetApprovalDetailsByReqestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovalDetailsByReqestIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="iPartRequest">
+    <wsdl:operation name="GetRequestHeadByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestHeadByRequestID" message="tns:iPartRequest_GetRequestHeadByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestHeadByRequestIDResponse" message="tns:iPartRequest_GetRequestHeadByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoPartRequestHead">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/SetIntoPartRequestHead" message="tns:iPartRequest_SetIntoPartRequestHead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/SetIntoPartRequestHeadResponse" message="tns:iPartRequest_SetIntoPartRequestHead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetStatusListForRequest" message="tns:iPartRequest_GetStatusListForRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetStatusListForRequestResponse" message="tns:iPartRequest_GetStatusListForRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestPartDetailByRequestID" message="tns:iPartRequest_GetRequestPartDetailByRequestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestPartDetailByRequestIDResponse" message="tns:iPartRequest_GetRequestPartDetailByRequestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/ClearTempDataFromDB" message="tns:iPartRequest_ClearTempDataFromDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/ClearTempDataFromDBResponse" message="tns:iPartRequest_ClearTempDataFromDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetExistingTempDataBySessionIDObjectName" message="tns:iPartRequest_GetExistingTempDataBySessionIDObjectName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetExistingTempDataBySessionIDObjectNameResponse" message="tns:iPartRequest_GetExistingTempDataBySessionIDObjectName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/AddPartIntoRequest_TempData" message="tns:iPartRequest_AddPartIntoRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/AddPartIntoRequest_TempDataResponse" message="tns:iPartRequest_AddPartIntoRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/RemovePartFromRequest_TempData" message="tns:iPartRequest_RemovePartFromRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/RemovePartFromRequest_TempDataResponse" message="tns:iPartRequest_RemovePartFromRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData" message="tns:iPartRequest_UpdatePartRequest_TempData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/UpdatePartRequest_TempDataResponse" message="tns:iPartRequest_UpdatePartRequest_TempData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveRequestPartDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/FinalSaveRequestPartDetail" message="tns:iPartRequest_FinalSaveRequestPartDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/FinalSaveRequestPartDetailResponse" message="tns:iPartRequest_FinalSaveRequestPartDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByUserID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByUserID" message="tns:iPartRequest_GetRequestSummayByUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByUserIDResponse" message="tns:iPartRequest_GetRequestSummayByUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayBySiteIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayBySiteIDs" message="tns:iPartRequest_GetRequestSummayBySiteIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayBySiteIDsResponse" message="tns:iPartRequest_GetRequestSummayBySiteIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByRequestIDs">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByRequestIDs" message="tns:iPartRequest_GetRequestSummayByRequestIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetRequestSummayByRequestIDsResponse" message="tns:iPartRequest_GetRequestSummayByRequestIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovalStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/SaveApprovalStatus" message="tns:iPartRequest_SaveApprovalStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/SaveApprovalStatusResponse" message="tns:iPartRequest_SaveApprovalStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsByReqestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsByReqestID" message="tns:iPartRequest_GetApprovalDetailsByReqestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iPartRequest/GetApprovalDetailsByReqestIDResponse" message="tns:iPartRequest_GetApprovalDetailsByReqestID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_iPartRequest" type="tns:iPartRequest">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRequestHeadByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestHeadByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetIntoPartRequestHead">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/SetIntoPartRequestHead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusListForRequest">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetStatusListForRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestPartDetailByRequestID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestPartDetailByRequestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearTempDataFromDB">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/ClearTempDataFromDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingTempDataBySessionIDObjectName">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetExistingTempDataBySessionIDObjectName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartIntoRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/AddPartIntoRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePartFromRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/RemovePartFromRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartRequest_TempData">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/UpdatePartRequest_TempData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalSaveRequestPartDetail">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/FinalSaveRequestPartDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByUserID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayBySiteIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayBySiteIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestSummayByRequestIDs">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetRequestSummayByRequestIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovalStatus">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/SaveApprovalStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovalDetailsByReqestID">
+      <soap:operation soapAction="http://tempuri.org/iPartRequest/GetApprovalDetailsByReqestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePartRequest">
+    <wsdl:port name="BasicHttpBinding_iPartRequest" binding="tns:BasicHttpBinding_iPartRequest">
+      <soap:address location="http://elegantcrm.com/poweronrentservices/Service.PowerOnRent/ServicePartRequest.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

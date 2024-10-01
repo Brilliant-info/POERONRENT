@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="587cb241-0d98-4c75-aca3-1f0be529c9c1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.Approval/ApprovalLevelMasterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ApprovalLevelMasterService1.disco" MetadataType="Disco" ID="dd6284e0-e4f3-485b-aeb4-b049a16eed85" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Approval/ApprovalLevelMasterService.svc?disco" />
+    <MetadataFile FileName="ApprovalLevelMasterService1.xsd" MetadataType="Schema" ID="f435ab3c-0372-4acc-9cb3-bb967e5bc279" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Approval/ApprovalLevelMasterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ApprovalLevelMasterService1.wsdl" MetadataType="Wsdl" ID="5ecdbae0-ad1b-4c59-812b-7423dad3415d" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Approval/ApprovalLevelMasterService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

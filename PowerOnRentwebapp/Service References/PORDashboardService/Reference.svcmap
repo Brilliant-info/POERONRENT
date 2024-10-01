@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d80b44c5-7148-4995-ac40-0f1e4b1f209a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.Dashboard/DashboardService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DashboardService.disco" MetadataType="Disco" ID="ceca29b2-503a-477f-bae9-258bb657035c" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Dashboard/DashboardService.svc?disco" />
+    <MetadataFile FileName="DashboardService.xsd" MetadataType="Schema" ID="fde619ac-bff6-4fbc-ae74-7b0e1ba95488" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Dashboard/DashboardService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DashboardService.wsdl" MetadataType="Wsdl" ID="806e9a80-5c54-477b-b199-1e483f480ddb" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Dashboard/DashboardService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

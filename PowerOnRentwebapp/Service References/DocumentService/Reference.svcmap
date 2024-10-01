@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="067aa09d-e61f-493c-b629-8fb5d9b1300e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.Document/DocumentService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DocumentService1.xsd" MetadataType="Schema" ID="52124a5e-e39b-4b5d-bd30-5d2e13327073" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Document/DocumentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DocumentService1.wsdl" MetadataType="Wsdl" ID="ae8d4945-8135-484d-a44a-f118b760eb2d" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Document/DocumentService.svc?wsdl" />
+    <MetadataFile FileName="DocumentService1.disco" MetadataType="Disco" ID="2129253a-b11a-4347-a299-8ac6f1de4112" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Document/DocumentService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

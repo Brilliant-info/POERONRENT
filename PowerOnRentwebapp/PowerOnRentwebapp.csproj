@@ -1,0 +1,1954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DBEEBC7-E8B4-4D52-B9CD-6C326D43BE1B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PowerOnRentwebapp</RootNamespace>
+    <AssemblyName>PowerOnRentwebapp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PublishDatabases>true</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.0.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Obout.Ajax.UI">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\Obout.Ajax.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_AJAXPage">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_AJAXPage.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ASPTreeView_2_NET">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_ASPTreeView_2_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Calendar2_Net">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_Calendar2_Net.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ComboBox">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_ComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Flyout2_NET">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_Flyout2_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Grid_NET">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_Grid_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Interface">
+      <HintPath>C:\oboutSuite_3.5_FullVersion\bin\obout_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Address\AddressInfo.aspx" />
+    <Content Include="Address\country_state.xml" />
+    <Content Include="Address\LabelAlice.xml" />
+    <Content Include="Address\UCAddress.ascx" />
+    <Content Include="Approval\ApprovalLevelMaster.aspx" />
+    <Content Include="Approval\UC_Approval.ascx" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Invoice16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Lead16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Lead24.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Opportunity16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Quotation16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Reports16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Reports16x16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\SalesOrder16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\SalesOrder16x16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\SalesOrder24.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Setup16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\menuimg\Support16.png" />
+    <Content Include="App_Themes\Blue\css3menu1\style.css" />
+    <Content Include="App_Themes\Blue\css\dashboard.css" />
+    <Content Include="App_Themes\Blue\css\general.css" />
+    <Content Include="App_Themes\Blue\css\style.css" />
+    <Content Include="App_Themes\Blue\css\userinfo.css" />
+    <Content Include="App_Themes\Blue\img\Addressbooksearch24.png" />
+    <Content Include="App_Themes\Blue\img\ajax-loader.gif" />
+    <Content Include="App_Themes\Blue\img\Background.jpg" />
+    <Content Include="App_Themes\Blue\img\BackgroundRpt.jpg" />
+    <Content Include="App_Themes\Blue\img\balloon.png" />
+    <Content Include="App_Themes\Blue\img\Bg_Gradient.png" />
+    <Content Include="App_Themes\Blue\img\blueDownArrow16x16.png" />
+    <Content Include="App_Themes\Blue\img\Calendar16.png" />
+    <Content Include="App_Themes\Blue\img\Calendar16x16.png" />
+    <Content Include="App_Themes\Blue\img\Calendar20.png" />
+    <Content Include="App_Themes\Blue\img\Calendar24.png" />
+    <Content Include="App_Themes\Blue\img\Calendar24x24.png" />
+    <Content Include="App_Themes\Blue\img\check-off.png" />
+    <Content Include="App_Themes\Blue\img\check-on.png" />
+    <Content Include="App_Themes\Blue\img\CheckboxChecked.png" />
+    <Content Include="App_Themes\Blue\img\CheckboxUnchecked.png" />
+    <Content Include="App_Themes\Blue\img\Delete16.png" />
+    <Content Include="App_Themes\Blue\img\Edit16.png" />
+    <Content Include="App_Themes\Blue\img\email.png" />
+    <Content Include="App_Themes\Blue\img\Female.png" />
+    <Content Include="App_Themes\Blue\img\help.png" />
+    <Content Include="App_Themes\Blue\img\help24.png" />
+    <Content Include="App_Themes\Blue\img\icon_close.png" />
+    <Content Include="App_Themes\Blue\img\logout16.png" />
+    <Content Include="App_Themes\Blue\img\mail.png" />
+    <Content Include="App_Themes\Blue\img\Male.png" />
+    <Content Include="App_Themes\Blue\img\Man64.png" />
+    <Content Include="App_Themes\Blue\img\Partitionimg.png" />
+    <Content Include="App_Themes\Blue\img\Processing.gif" />
+    <Content Include="App_Themes\Blue\img\radio-off.png" />
+    <Content Include="App_Themes\Blue\img\radio-on.png" />
+    <Content Include="App_Themes\Blue\img\Search.png" />
+    <Content Include="App_Themes\Blue\img\Search16.png" />
+    <Content Include="App_Themes\Blue\img\search16x16.png" />
+    <Content Include="App_Themes\Blue\img\Search24.png" />
+    <Content Include="App_Themes\Blue\img\SelectAccount16.png" />
+    <Content Include="App_Themes\Blue\img\Setting16.png" />
+    <Content Include="App_Themes\Blue\img\sliderClose.png" />
+    <Content Include="App_Themes\Blue\img\sliderOpen.png" />
+    <Content Include="App_Themes\Blue\img\StandardError.png" />
+    <Content Include="App_Themes\Blue\img\StandardHelp.png" />
+    <Content Include="App_Themes\Blue\img\StandardInformation.png" />
+    <Content Include="App_Themes\Blue\img\StandardWarning.png" />
+    <Content Include="App_Themes\Blue\img\TaskAlert16.png" />
+    <Content Include="App_Themes\Blue\img\TaskAlert24.png" />
+    <Content Include="App_Themes\Blue\img\TaxCalculation16.png" />
+    <Content Include="App_Themes\Blue\img\user.jpg" />
+    <Content Include="App_Themes\Blue\img\User1.png" />
+    <Content Include="App_Themes\Blue\img\User2.png" />
+    <Content Include="App_Themes\Blue\img\user_female.png" />
+    <Content Include="App_Themes\Blue\img\user_male.png" />
+    <Content Include="App_Themes\Blue\PIE.htc" />
+    <Content Include="App_Themes\Grid\img\Remove16x16.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\asc.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\desc.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\details_btn_close.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\details_btn_open.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\filter_criterias.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_disabled.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_disabled_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_normal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_normal_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_over.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_over_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_pressed.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\first_pressed_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\group_arrow_bottom.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\group_arrow_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\group_btn_close.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\group_btn_open.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\header.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\header_placeholder.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\horizontal.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\lighted.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\lighted.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\vertical.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\images\vertical.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutDropDownList\style.css" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\images\textbox.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\images\textbox.png" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\style.css" />
+    <Content Include="App_Themes\Grid\styles\style_9\interface\OboutTextBox\style_multiline.css" />
+    <Content Include="App_Themes\Grid\styles\style_9\last.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_disabled.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_disabled_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_normal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_normal_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_over.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_over_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_pressed.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\last_pressed_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\minus.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_disabled.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_disabled_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_normal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_normal_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_over.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_over_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_pressed.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\next_pressed_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\placeholder.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\placeholder_empty.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\plus.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_disabled.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_disabled_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_normal.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_normal_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_over.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_over_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_pressed.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\previous_pressed_top.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\record_group_header.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\record_group_header2.gif" />
+    <Content Include="App_Themes\Grid\styles\style_9\style.css" />
+    <Content Include="App_Themes\HeaderMenuIcon\Account.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Account16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\blue-alarme1.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\consumption.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Dashboard.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Dashboard_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\hqgrn.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Inbox.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Inbox_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Invoice.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Invoice16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Issue.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Opportunity.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Opportunity_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Quotation.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Quotation_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Receipt.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Report.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Report_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Request.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\SalesOrder.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\SalesOrder_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Setup.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Setup_16x16.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Support.png" />
+    <Content Include="App_Themes\HeaderMenuIcon\Support_16x16.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutButton\images\button.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutButton\images\button.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutButton\images\overlay.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutButton\style.css" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutCheckBox\style.css" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\horizontal.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\lighted.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\lighted.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\vertical.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\images\vertical.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutDropDownList\style.css" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutRadioButton\images\Radio.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutRadioButton\images\Radio.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutRadioButton\style.css" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutTextBox\images\textbox.gif" />
+    <Content Include="App_Themes\Interface\styles\premiere_blue\OboutTextBox\images\textbox.png" />
+    <Content Include="App_Themes\Login.css" />
+    <Content Include="App_Themes\PIE.js" />
+    <Content Include="App_Themes\PIE_uncompressed.js" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.WebDesign.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Obout.Ajax.UI.dll" />
+    <Content Include="bin\obout_AJAXPage.dll" />
+    <Content Include="bin\obout_ASPTreeView_2_NET.dll" />
+    <Content Include="bin\obout_Calendar2_Net.dll" />
+    <Content Include="bin\obout_ComboBox.dll" />
+    <Content Include="bin\obout_Flyout2_NET.dll" />
+    <Content Include="bin\obout_Grid_NET.dll" />
+    <Content Include="bin\obout_Interface.dll" />
+    <Content Include="bin\PowerOnRentwebapp.dll" />
+    <Content Include="bin\PowerOnRentwebapp.pdb" />
+    <Content Include="CommonControls\HomeSetup.aspx" />
+    <Content Include="CommonControls\HomeSetupImg\accessdDenied.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\account.png" />
+    <Content Include="CommonControls\HomeSetupImg\ActivityManagement.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\companymgm.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\customfields.png" />
+    <Content Include="CommonControls\HomeSetupImg\dasbaord2.png" />
+    <Content Include="CommonControls\HomeSetupImg\Dasboard_Eng.png" />
+    <Content Include="CommonControls\HomeSetupImg\Dashboad1.png" />
+    <Content Include="CommonControls\HomeSetupImg\Dashboard.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\download.png" />
+    <Content Include="CommonControls\HomeSetupImg\inventory.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\leadManagement.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\productmanagement.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\purchase.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\reports.jpg" />
+    <Content Include="CommonControls\HomeSetupImg\taxmagmt.png" />
+    <Content Include="CommonControls\HomeSetupImg\user_Management.png" />
+    <Content Include="CommonControls\HomeSetupPOR.aspx" />
+    <Content Include="CommonControls\Toolbar.ascx" />
+    <Content Include="CommonControls\UCFormHeader.ascx" />
+    <Content Include="CommonControls\UCToolbar.ascx" />
+    <Content Include="CommonControls\UCToolbarHTML.ascx" />
+    <Content Include="CommonControls\UC_Date.ascx" />
+    <Content Include="Company\Logo\1.png" />
+    <Content Include="Company\Logo\13.png" />
+    <Content Include="Company\Logo\14.png" />
+    <Content Include="Company\Logo\2.png" />
+    <Content Include="Company\Logo\3.png" />
+    <Content Include="Company\Logo\4 - Copy.jpg" />
+    <Content Include="Company\Logo\4.jpg" />
+    <Content Include="Company\Logo\4.png" />
+    <Content Include="Company\TempLogo\q0aifd4cydrchjgy2yjb4avd.jpeg" />
+    <Content Include="Company\TempLogo\q0aifd4cydrchjgy2yjb4avd.png" />
+    <Content Include="Company\UserSearch.aspx" />
+    <Content Include="DashBoard\BindDashboard.aspx" />
+    <Content Include="DashBoard\DashBoard.ascx" />
+    <Content Include="DashBoard\Dashboard.aspx" />
+    <Content Include="DashBoard\Dashboard1.ascx" />
+    <Content Include="DashBoard\DashboardInvoice.aspx" />
+    <Content Include="DashBoard\data_icon.jpg" />
+    <Content Include="DashBoard\excel_icon.jpg" />
+    <Content Include="DashBoard\pdf_icon.jpg" />
+    <Content Include="DashBoard\product.png" />
+    <Content Include="DashBoard\R.png" />
+    <Content Include="Document\Document.aspx" />
+    <Content Include="Document\Document1.aspx" />
+    <Content Include="Document\UC_AttachDocument.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Image.aspx" />
+    <Content Include="Image1.aspx" />
+    <Content Include="Image2.aspx" />
+    <Content Include="Inbox\Inbox.aspx" />
+    <Content Include="Inbox\InboxPOR.aspx" />
+    <Content Include="Inbox\PORInbox.aspx" />
+    <Content Include="Login\ChangePassword.aspx" />
+    <Content Include="Login\Logout.aspx" />
+    <Content Include="Login\ForgotPassword.aspx" />
+    <Content Include="Login\Index.aspx" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="MasterPage\JavaScripts\countries.js" />
+    <Content Include="MasterPage\JavaScripts\crm.js" />
+    <Content Include="MasterPage\JavaScripts\GetTrans.js" />
+    <Content Include="MasterPage\JavaScripts\Script.js" />
+    <Content Include="MasterPage\JavaScripts\Test.js" />
+    <Content Include="MasterPage\JavaScripts\Transaction.js" />
+    <Content Include="MasterPage\Logo\1.png" />
+    <Content Include="MasterPage\Logo\15.png" />
+    <Content Include="MasterPage\Logo\2.jpg" />
+    <Content Include="MasterPage\Logo\Cumminslogo.gif" />
+    <Content Include="MasterPage\Logo\ElegantCRM.png" />
+    <Content Include="MasterPage\Logo\Elegantcrm_104x31.png" />
+    <Content Include="MasterPage\Logo\ElegantCRM_footerlogo.png" />
+    <Content Include="MasterPage\Logo\ElegentCrmLogoCRMS.png" />
+    <Content Include="MasterPage\Logo\ElegentCrmLogoLoginPg.png" />
+    <Content Include="MasterPage\Logo\Cummins.ico" />
+    <Content Include="MasterPage\Logo\FullElegentCrmLogo.png" />
+    <Content Include="MasterPage\Logo\gharana_products.jpg" />
+    <Content Include="MasterPage\Logo\Logo_Bg.png" />
+    <Content Include="MasterPage\Logo\Partitionimg.png" />
+    <Content Include="MasterPage\Logo\YourCompanyLogo.jpg" />
+    <Content Include="MasterPage\Logo\YourCompanyLogo1.jpg" />
+    <Content Include="PopupMessages\Scripts\message.js" />
+    <Content Include="PopupMessages\themes\message_default.css" />
+    <Content Include="PopupMessages\themes\message_growl_dark.css" />
+    <Content Include="PopupMessages\themes\message_growl_shiny.css" />
+    <Content Include="PopupMessages\themes\message_skyblue.css" />
+    <Content Include="PopupMessages\themes\message_solid.css" />
+    <Content Include="POR\AssetMaster.aspx" />
+    <Content Include="POR\DashboardPOR.aspx" />
+    <Content Include="POR\Dashboard_Enginewise.aspx" />
+    <Content Include="POR\EngineMaster.aspx" />
+    <Content Include="POR\Img\PrdRpt.jpg" />
+    <Content Include="POR\Img\report1.png" />
+    <Content Include="POR\Img\Report2.png" />
+    <Content Include="POR\Img\report3.png" />
+    <Content Include="POR\Img\Report4.png" />
+    <Content Include="POR\PORHome.aspx" />
+    <Content Include="POR\Reports\ReportViewer.aspx" />
+    <Content Include="POR\SiteMaster.aspx" />
+    <Content Include="POR\ToolTransfer.aspx" />
+    <Content Include="PowerOnRent\CommonReport.aspx" />
+    <Content Include="PowerOnRent\Default.aspx" />
+    <Content Include="PowerOnRent\GridConsumptionSummary.aspx" />
+    <Content Include="PowerOnRent\GridHQReceiptSummary.aspx" />
+    <Content Include="PowerOnRent\GridIssueSummary.aspx" />
+    <Content Include="PowerOnRent\GridReceiptSummary.aspx" />
+    <Content Include="PowerOnRent\GridRequestSummary.aspx" />
+    <Content Include="PowerOnRent\HQGoodsReceiptEntry.aspx" />
+    <Content Include="PowerOnRent\Img\report1.png" />
+    <Content Include="PowerOnRent\Img\Report2.png" />
+    <Content Include="PowerOnRent\Img\report3.png" />
+    <Content Include="PowerOnRent\Img\Report4.png" />
+    <Content Include="PowerOnRent\Img\tool5.png" />
+    <Content Include="PowerOnRent\PartConsumptionEntry.aspx" />
+    <Content Include="PowerOnRent\PartIssueEntry.aspx" />
+    <Content Include="PowerOnRent\PartReceiptEntry.aspx" />
+    <Content Include="PowerOnRent\PartRequestEntry.aspx" />
+    <Content Include="PowerOnRent\PORPartSearch.aspx" />
+    <Content Include="PowerOnRent\TestFilter.aspx" />
+    <Content Include="PowerOnRent\TransferFrmSite.aspx" />
+    <Content Include="PowerOnRent\UCCommonFilter.ascx" />
+    <Content Include="Product\ProductCategoryMaster.aspx" />
+    <Content Include="Product\ProductMaster.aspx" />
+    <Content Include="Product\ProductSearch.aspx" />
+    <Content Include="Product\ProductSubCategoryMaster.aspx" />
+    <Content Include="Product\UCProductSearch.ascx" />
+    <Content Include="Product\UOM.aspx" />
+    <Content Include="dsSiteConsumption1.xsc">
+      <DependentUpon>dsSiteConsumption1.xsd</DependentUpon>
+    </Content>
+    <None Include="dsSiteConsumption1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSiteConsumption1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dsSiteConsumption1.xss">
+      <DependentUpon>dsSiteConsumption1.xsd</DependentUpon>
+    </Content>
+    <Content Include="elegantcrm7DataSet76.xsc">
+      <DependentUpon>elegantcrm7DataSet76.xsd</DependentUpon>
+    </Content>
+    <None Include="elegantcrm7DataSet76.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>elegantcrm7DataSet76.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="elegantcrm7DataSet76.xss">
+      <DependentUpon>elegantcrm7DataSet76.xsd</DependentUpon>
+    </Content>
+    <None Include="elegantcrm7DataSetPartConsumption.xsc">
+      <DependentUpon>elegantcrm7DataSetPartConsumption.xsd</DependentUpon>
+    </None>
+    <None Include="elegantcrm7DataSetPartConsumption.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>elegantcrm7DataSetPartConsumption.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="elegantcrm7DataSetPartConsumption.xss">
+      <DependentUpon>elegantcrm7DataSetPartConsumption.xsd</DependentUpon>
+    </None>
+    <None Include="elegantcrm7ToolsTransfer.xsc">
+      <DependentUpon>elegantcrm7ToolsTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="elegantcrm7ToolsTransfer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>elegantcrm7ToolsTransfer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="elegantcrm7ToolsTransfer.xss">
+      <DependentUpon>elegantcrm7ToolsTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="POR\Img\CUMMINS MRS User Guide 1.0.0.pdf" />
+    <None Include="ProductBalance.xsc">
+      <DependentUpon>ProductBalance.xsd</DependentUpon>
+    </None>
+    <None Include="ProductBalance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductBalance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductBalance.xss">
+      <DependentUpon>ProductBalance.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\PowerOnRentwebapp.BindMenuService.ProBindMenu.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReceiptDetails.xsc">
+      <DependentUpon>ReceiptDetails.xsd</DependentUpon>
+    </None>
+    <None Include="ReceiptDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceiptDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceiptDetails.xss">
+      <DependentUpon>ReceiptDetails.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\AddressInfoService\AddressInfoService1.wsdl" />
+    <None Include="Service References\AddressInfoService\AddressInfoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AddressInfoService\configuration91.svcinfo" />
+    <None Include="Service References\AddressInfoService\configuration.svcinfo" />
+    <None Include="Service References\AddressInfoService\PowerOnRentwebapp.AddressInfoService.mRoute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressInfoService\PowerOnRentwebapp.AddressInfoService.mSubZone.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressInfoService\PowerOnRentwebapp.AddressInfoService.mZone.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressInfoService\PowerOnRentwebapp.AddressInfoService.SP_GetAddressListToBindGrid_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressInfoService\PowerOnRentwebapp.AddressInfoService.tAddress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AddressInfoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ApprovalLevelMasterService\ApprovalLevelMasterService1.wsdl" />
+    <None Include="Service References\ApprovalLevelMasterService\ApprovalLevelMasterService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ApprovalLevelMasterService\configuration91.svcinfo" />
+    <None Include="Service References\ApprovalLevelMasterService\configuration.svcinfo" />
+    <None Include="Service References\ApprovalLevelMasterService\PowerOnRentwebapp.ApprovalLevelMasterService.mApprovalLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ApprovalLevelMasterService\PowerOnRentwebapp.ApprovalLevelMasterService.mApprovalLevelDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ApprovalLevelMasterService\PowerOnRentwebapp.ApprovalLevelMasterService.SP_GetUserForApprovalMaster_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ApprovalLevelMasterService\PowerOnRentwebapp.ApprovalLevelMasterService.sysmObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ApprovalLevelMasterService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BindMenuService\BindMenuService.wsdl" />
+    <None Include="Service References\BindMenuService\BindMenuService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BindMenuService\PowerOnRentwebapp.BindMenuService.ProBindMenu1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CompanySetupService\CompanySetupService1.wsdl" />
+    <None Include="Service References\CompanySetupService\CompanySetupService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CompanySetupService\PowerOnRentwebapp.CompanySetupService.mCompany.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CompanySetupService\PowerOnRentwebapp.CompanySetupService.tCompanyRegistrationDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CompanySetupService\PowerOnRentwebapp.CompanySetupService.vGetCompanyDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DepartmentService\DepartmentService1.wsdl" />
+    <None Include="Service References\DepartmentService\DepartmentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepartmentService\PowerOnRentwebapp.DepartmentService.mDepartment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DesignationService\DesignationService1.wsdl" />
+    <None Include="Service References\DesignationService\DesignationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DesignationService\PowerOnRentwebapp.DesignationService.mDesignation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DocumentService\DocumentService1.wsdl" />
+    <None Include="Service References\DocumentService\DocumentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocumentService\PowerOnRentwebapp.DocumentService.SP_GetDocumentList_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InboxService\InboxService.wsdl" />
+    <None Include="Service References\InboxService\InboxService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InboxService\PowerOnRentwebapp.InboxService.POR_vGetInboxData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InboxService\PowerOnRentwebapp.InboxService.SP_GetInboxDataOfApproval_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InboxService\PowerOnRentwebapp.InboxService.SP_GetInboxData_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LoginService\Login.wsdl" />
+    <None Include="Service References\LoginService\Login.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoginService\Login2.wsdl" />
+    <None Include="Service References\LoginService\Login2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORDashboardService\DashboardService.wsdl" />
+    <None Include="Service References\PORDashboardService\DashboardService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORDashboardService\PowerOnRentwebapp.PORDashboardService.POR_Dashboard_UserWise.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceEngineMaster\PowerOnRentwebapp.PORServiceEngineMaster.v_GetEngineDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceEngineMaster\ServiceEngineMaster1.wsdl" />
+    <None Include="Service References\PORServiceEngineMaster\ServiceEngineMaster1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\PowerOnRentwebapp.PORServiceHQGoodsReceipt.mStatu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\PowerOnRentwebapp.PORServiceHQGoodsReceipt.PORtGRNHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\PowerOnRentwebapp.PORServiceHQGoodsReceipt.POR_SP_GetHQReceiptSummaryBySiteIDsOrUserIDOrReceiptIDs_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\PowerOnRentwebapp.PORServiceHQGoodsReceipt.POR_SP_GetPartDetails_OfGRN_HQ_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\PowerOnRentwebapp.PORServiceHQGoodsReceipt.POR_SP_GetPartDetails_OfMIN_Transfer_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\ServiceHQGoodsReceipt11.wsdl" />
+    <None Include="Service References\PORServiceHQGoodsReceipt\ServiceHQGoodsReceipt11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServicePartConsumption\PowerOnRentwebapp.PORServicePartConsumption.mStatu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartConsumption\PowerOnRentwebapp.PORServicePartConsumption.PORtConsumptionHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartConsumption\PowerOnRentwebapp.PORServicePartConsumption.POR_SP_GetConsumptionSummaryBySiteIDsOrUserIDOrReceiptIDsOrConsumptionIDs_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartConsumption\PowerOnRentwebapp.PORServicePartConsumption.POR_SP_GetPartDetails_OfConsumption_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartConsumption\ServicePartConsumption11.wsdl" />
+    <None Include="Service References\PORServicePartConsumption\ServicePartConsumption11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServicePartIssue\PowerOnRentwebapp.PORServicePartIssue.mStatu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartIssue\PowerOnRentwebapp.PORServicePartIssue.PORtMINHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartIssue\PowerOnRentwebapp.PORServicePartIssue.POR_SP_GetIssueSummaryBySiteIDsOrUserIDOrRequestIDOrIssueIDs_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartIssue\PowerOnRentwebapp.PORServicePartIssue.POR_SP_GetPartDetails_OfMIN_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartIssue\ServicePartIssue.wsdl" />
+    <None Include="Service References\PORServicePartIssue\ServicePartIssue.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServicePartReceipts\PowerOnRentwebapp.PORServicePartReceipts.mStatu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartReceipts\PowerOnRentwebapp.PORServicePartReceipts.PORtGRNHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartReceipts\PowerOnRentwebapp.PORServicePartReceipts.POR_SP_GetPartDetails_OfGRN_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartReceipts\PowerOnRentwebapp.PORServicePartReceipts.POR_SP_GetReceiptSummaryBySiteIDsOrUserIDOrRequestID_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartReceipts\ServicePartReceipts.wsdl" />
+    <None Include="Service References\PORServicePartReceipts\ServicePartReceipts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServicePartRequest\PowerOnRentwebapp.PORServicePartRequest.mStatu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartRequest\PowerOnRentwebapp.PORServicePartRequest.PORtPartRequestHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartRequest\PowerOnRentwebapp.PORServicePartRequest.POR_SP_GetPartDetail_ForRequest_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartRequest\PowerOnRentwebapp.PORServicePartRequest.POR_SP_GetRequestByRequestIDs_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartRequest\PowerOnRentwebapp.PORServicePartRequest.POR_SP_GetRequestBySiteIDsOrUserID_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartRequest\PowerOnRentwebapp.PORServicePartRequest.tApprovalDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServicePartRequest\ServicePartRequest.wsdl" />
+    <None Include="Service References\PORServicePartRequest\ServicePartRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServiceSiteMaster\PowerOnRentwebapp.PORServiceSiteMaster.mTerritory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceSiteMaster\PowerOnRentwebapp.PORServiceSiteMaster.v_GetSiteDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceSiteMaster\ServiceSiteMaster11.wsdl" />
+    <None Include="Service References\PORServiceSiteMaster\ServiceSiteMaster11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\PowerOnRentwebapp.PORServiceUCCommonFilter.GetPrdDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\PowerOnRentwebapp.PORServiceUCCommonFilter.mStatu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\PowerOnRentwebapp.PORServiceUCCommonFilter.mTerritory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\PowerOnRentwebapp.PORServiceUCCommonFilter.vGetUserProfileByUserID.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\PowerOnRentwebapp.PORServiceUCCommonFilter.v_GetEngineDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\ServiceUCCommonFilter.wsdl" />
+    <None Include="Service References\PORServiceUCCommonFilter\ServiceUCCommonFilter.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\ServiceUCCommonFilter1.wsdl" />
+    <None Include="Service References\PORServiceUCCommonFilter\ServiceUCCommonFilter1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductCategoryService\PowerOnRentwebapp.ProductCategoryService.mProductCategory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductCategoryService\PowerOnRentwebapp.ProductCategoryService.vGetProductCagetoryList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductCategoryService\ProductCategoryService1.wsdl" />
+    <None Include="Service References\ProductCategoryService\ProductCategoryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.GetProductDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.mProduct.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.mProductRateDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.mProductSpecificationDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.mProductType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.mUOM.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.POR_SP_SiteWiseTools_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.POR_VW_ToolTransferDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.SP_GetProductMasterTaxSetupByProductID_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.SP_GetSiteWiseInventoryByProductIDs_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.tToolTransferHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\PowerOnRentwebapp.ProductMasterService.VW_ToolSiteHistoryDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductMasterService\ProductService1.wsdl" />
+    <None Include="Service References\ProductMasterService\ProductService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductSubCategoryService\PowerOnRentwebapp.ProductSubCategoryService.mProductSubCategory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductSubCategoryService\PowerOnRentwebapp.ProductSubCategoryService.vGetProductSubCagetoryList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductSubCategoryService\ProductSubCategoryService1.wsdl" />
+    <None Include="Service References\ProductSubCategoryService\ProductSubCategoryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProductUOMService\PowerOnRentwebapp.ProductUOMService.mUOM.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProductUOMService\UOMService1.wsdl" />
+    <None Include="Service References\ProductUOMService\UOMService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoleMasterService\PowerOnRentwebapp.RoleMasterService.mRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RoleMasterService\PowerOnRentwebapp.RoleMasterService.SP_GetDataToBindRoleMaster_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RoleMasterService\PowerOnRentwebapp.RoleMasterService.vGetRoleMasterData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RoleMasterService\RoleMasterService1.wsdl" />
+    <None Include="Service References\RoleMasterService\RoleMasterService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceTerritory\PowerOnRentwebapp.ServiceTerritory.mTerritory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceTerritory\PowerOnRentwebapp.ServiceTerritory.vGetUserProfileList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceTerritory\TerritoryServices1.wsdl" />
+    <None Include="Service References\ServiceTerritory\TerritoryServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ToolbarService\PowerOnRentwebapp.ToolbarService.mUserRolesDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ToolbarService\UCToolbarService1.wsdl" />
+    <None Include="Service References\ToolbarService\UCToolbarService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ToolbarService\UCToolbarService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UCProductSearchService\PowerOnRentwebapp.UCProductSearchService.GetProductDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UCProductSearchService\UCProductSearchService1.wsdl" />
+    <None Include="Service References\UCProductSearchService\UCProductSearchService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UC_ApprovalService\PowerOnRentwebapp.UC_ApprovalService.tApprovalDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UC_ApprovalService\configuration91.svcinfo" />
+    <None Include="Service References\UC_ApprovalService\configuration.svcinfo" />
+    <None Include="Service References\UC_ApprovalService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CompanySetupService\configuration91.svcinfo" />
+    <None Include="Service References\CompanySetupService\configuration.svcinfo" />
+    <None Include="Service References\CompanySetupService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceTerritory\configuration91.svcinfo" />
+    <None Include="Service References\ServiceTerritory\configuration.svcinfo" />
+    <None Include="Service References\ServiceTerritory\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DocumentService\configuration91.svcinfo" />
+    <None Include="Service References\DocumentService\configuration.svcinfo" />
+    <None Include="Service References\DocumentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\LoginService\Login.disco" />
+    <None Include="Service References\LoginService\configuration91.svcinfo" />
+    <None Include="Service References\LoginService\configuration.svcinfo" />
+    <None Include="Service References\LoginService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServiceEngineMaster\configuration91.svcinfo" />
+    <None Include="Service References\PORServiceEngineMaster\configuration.svcinfo" />
+    <None Include="Service References\PORServiceEngineMaster\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServiceHQGoodsReceipt\configuration91.svcinfo" />
+    <None Include="Service References\PORServiceHQGoodsReceipt\configuration.svcinfo" />
+    <None Include="Service References\PORServiceHQGoodsReceipt\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServicePartConsumption\configuration91.svcinfo" />
+    <None Include="Service References\PORServicePartConsumption\configuration.svcinfo" />
+    <None Include="Service References\PORServicePartConsumption\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServiceSiteMaster\configuration91.svcinfo" />
+    <None Include="Service References\PORServiceSiteMaster\configuration.svcinfo" />
+    <None Include="Service References\PORServiceSiteMaster\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\ServiceUCCommonFilter.disco" />
+    <None Include="Service References\PORServiceUCCommonFilter\configuration91.svcinfo" />
+    <None Include="Service References\PORServiceUCCommonFilter\configuration.svcinfo" />
+    <None Include="Service References\PORServiceUCCommonFilter\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProductCategoryService\configuration91.svcinfo" />
+    <None Include="Service References\ProductCategoryService\configuration.svcinfo" />
+    <None Include="Service References\ProductCategoryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProductMasterService\configuration91.svcinfo" />
+    <None Include="Service References\ProductMasterService\configuration.svcinfo" />
+    <None Include="Service References\ProductMasterService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProductSubCategoryService\configuration91.svcinfo" />
+    <None Include="Service References\ProductSubCategoryService\configuration.svcinfo" />
+    <None Include="Service References\ProductSubCategoryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UCProductSearchService\configuration91.svcinfo" />
+    <None Include="Service References\UCProductSearchService\configuration.svcinfo" />
+    <None Include="Service References\UCProductSearchService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ProductUOMService\configuration91.svcinfo" />
+    <None Include="Service References\ProductUOMService\configuration.svcinfo" />
+    <None Include="Service References\ProductUOMService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ToolbarService\configuration91.svcinfo" />
+    <None Include="Service References\ToolbarService\configuration.svcinfo" />
+    <None Include="Service References\ToolbarService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DepartmentService\configuration91.svcinfo" />
+    <None Include="Service References\DepartmentService\configuration.svcinfo" />
+    <None Include="Service References\DepartmentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DesignationService\configuration91.svcinfo" />
+    <None Include="Service References\DesignationService\configuration.svcinfo" />
+    <None Include="Service References\DesignationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RoleMasterService\configuration91.svcinfo" />
+    <None Include="Service References\RoleMasterService\configuration.svcinfo" />
+    <None Include="Service References\RoleMasterService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UC_ApprovalService\UC_ApprovalService1.wsdl" />
+    <None Include="Service References\UC_ApprovalService\UC_ApprovalService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserCreationService\configuration91.svcinfo" />
+    <None Include="Service References\UserCreationService\configuration.svcinfo" />
+    <None Include="Service References\UserCreationService\PowerOnRentwebapp.UserCreationService.mUserProfileHead.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserCreationService\PowerOnRentwebapp.UserCreationService.SP_GetUserRoleDetail_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserCreationService\PowerOnRentwebapp.UserCreationService.vGetUserProfileByUserID.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserCreationService\PowerOnRentwebapp.UserCreationService.vGetUserProfileList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserCreationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORDashboardService\DashboardService.disco" />
+    <None Include="Service References\PORDashboardService\configuration91.svcinfo" />
+    <None Include="Service References\PORDashboardService\configuration.svcinfo" />
+    <None Include="Service References\PORDashboardService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServicePartRequest\configuration91.svcinfo" />
+    <None Include="Service References\PORServicePartRequest\configuration.svcinfo" />
+    <None Include="Service References\PORServicePartRequest\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\InboxService\configuration91.svcinfo" />
+    <None Include="Service References\InboxService\configuration.svcinfo" />
+    <None Include="Service References\InboxService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServicePartReceipts\configuration91.svcinfo" />
+    <None Include="Service References\PORServicePartReceipts\configuration.svcinfo" />
+    <None Include="Service References\PORServicePartReceipts\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServicePartIssue\configuration91.svcinfo" />
+    <None Include="Service References\PORServicePartIssue\configuration.svcinfo" />
+    <None Include="Service References\PORServicePartIssue\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PORServiceUCCommonFilter\ServiceUCCommonFilter1.disco" />
+    <None Include="Service References\PORServiceHQGoodsReceipt\ServiceHQGoodsReceipt11.disco" />
+    <None Include="Service References\PORServicePartIssue\ServicePartIssue.disco" />
+    <None Include="Service References\UserCreationService\UserCreationService1.disco" />
+    <None Include="Service References\RoleMasterService\RoleMasterService1.disco" />
+    <None Include="Service References\AddressInfoService\AddressInfoService1.disco" />
+    <None Include="Service References\ApprovalLevelMasterService\ApprovalLevelMasterService1.disco" />
+    <None Include="Service References\CompanySetupService\CompanySetupService1.disco" />
+    <None Include="Service References\DepartmentService\DepartmentService1.disco" />
+    <None Include="Service References\DesignationService\DesignationService1.disco" />
+    <None Include="Service References\DocumentService\DocumentService1.disco" />
+    <None Include="Service References\InboxService\InboxService.disco" />
+    <None Include="Service References\LoginService\Login2.disco" />
+    <None Include="Service References\PORServiceEngineMaster\ServiceEngineMaster1.disco" />
+    <None Include="Service References\PORServicePartConsumption\ServicePartConsumption11.disco" />
+    <None Include="Service References\PORServicePartReceipts\ServicePartReceipts.disco" />
+    <None Include="Service References\PORServicePartRequest\ServicePartRequest.disco" />
+    <None Include="Service References\PORServiceSiteMaster\ServiceSiteMaster11.disco" />
+    <None Include="Service References\ProductCategoryService\ProductCategoryService1.disco" />
+    <None Include="Service References\ProductMasterService\ProductService1.disco" />
+    <None Include="Service References\ProductSubCategoryService\ProductSubCategoryService1.disco" />
+    <None Include="Service References\ProductUOMService\UOMService1.disco" />
+    <None Include="Service References\ServiceTerritory\TerritoryServices1.disco" />
+    <None Include="Service References\ToolbarService\UCToolbarService1.disco" />
+    <None Include="Service References\UC_ApprovalService\UC_ApprovalService1.disco" />
+    <None Include="Service References\UCProductSearchService\UCProductSearchService1.disco" />
+    <None Include="Service References\BindMenuService\BindMenuService.disco" />
+    <None Include="Service References\BindMenuService\configuration91.svcinfo" />
+    <None Include="Service References\BindMenuService\configuration.svcinfo" />
+    <None Include="Service References\BindMenuService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Territory\TestTR.aspx" />
+    <Content Include="Territory\UC_Territory.ascx" />
+    <Content Include="UserManagement\DepartmentMaster.aspx" />
+    <Content Include="UserManagement\DesignationMaster.aspx" />
+    <Content Include="UserManagement\ProfileSetting.aspx" />
+    <Content Include="UserManagement\RoleMaster.aspx" />
+    <Content Include="UserManagement\UserCreation.aspx" />
+    <Content Include="UserManagement\UserList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\UserCreationService\UserCreationService1.wsdl" />
+    <None Include="Service References\UserCreationService\UserCreationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SiteTransfer.xsc">
+      <DependentUpon>SiteTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="SiteTransfer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SiteTransfer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SiteTransfer.xss">
+      <DependentUpon>SiteTransfer.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address\AddressInfo.aspx.cs">
+      <DependentUpon>AddressInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address\AddressInfo.aspx.designer.cs">
+      <DependentUpon>AddressInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address\UCAddress.ascx.cs">
+      <DependentUpon>UCAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address\UCAddress.ascx.designer.cs">
+      <DependentUpon>UCAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\ApprovalLevelMaster.aspx.cs">
+      <DependentUpon>ApprovalLevelMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\ApprovalLevelMaster.aspx.designer.cs">
+      <DependentUpon>ApprovalLevelMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\UC_Approval.ascx.cs">
+      <DependentUpon>UC_Approval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\UC_Approval.ascx.designer.cs">
+      <DependentUpon>UC_Approval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\HomeSetup.aspx.cs">
+      <DependentUpon>HomeSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\HomeSetup.aspx.designer.cs">
+      <DependentUpon>HomeSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\HomeSetupPOR.aspx.cs">
+      <DependentUpon>HomeSetupPOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\HomeSetupPOR.aspx.designer.cs">
+      <DependentUpon>HomeSetupPOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\Toolbar.ascx.cs">
+      <DependentUpon>Toolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\Toolbar.ascx.designer.cs">
+      <DependentUpon>Toolbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\UCFormHeader.ascx.cs">
+      <DependentUpon>UCFormHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\UCFormHeader.ascx.designer.cs">
+      <DependentUpon>UCFormHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\UCToolbar.ascx.cs">
+      <DependentUpon>UCToolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\UCToolbar.ascx.designer.cs">
+      <DependentUpon>UCToolbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\UCToolbarHTML.ascx.cs">
+      <DependentUpon>UCToolbarHTML.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\UCToolbarHTML.ascx.designer.cs">
+      <DependentUpon>UCToolbarHTML.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\UC_Date.ascx.cs">
+      <DependentUpon>UC_Date.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonControls\UC_Date.ascx.designer.cs">
+      <DependentUpon>UC_Date.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\UserSearch.aspx.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\UserSearch.aspx.designer.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\BindDashboard.aspx.cs">
+      <DependentUpon>BindDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\BindDashboard.aspx.designer.cs">
+      <DependentUpon>BindDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\DashBoard.ascx.cs">
+      <DependentUpon>DashBoard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\DashBoard.ascx.designer.cs">
+      <DependentUpon>DashBoard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\Dashboard1.ascx.cs">
+      <DependentUpon>Dashboard1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\Dashboard1.ascx.designer.cs">
+      <DependentUpon>Dashboard1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\DashboardInvoice.aspx.cs">
+      <DependentUpon>DashboardInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\DashboardInvoice.aspx.designer.cs">
+      <DependentUpon>DashboardInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Document.aspx.cs">
+      <DependentUpon>Document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Document.aspx.designer.cs">
+      <DependentUpon>Document.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Document1.aspx.cs">
+      <DependentUpon>Document1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Document1.aspx.designer.cs">
+      <DependentUpon>Document1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\UC_AttachDocument.ascx.cs">
+      <DependentUpon>UC_AttachDocument.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\UC_AttachDocument.ascx.designer.cs">
+      <DependentUpon>UC_AttachDocument.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="dsSiteConsumption1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSiteConsumption1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="elegantcrm7DataSet76.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>elegantcrm7DataSet76.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="elegantcrm7DataSetPartConsumption.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>elegantcrm7DataSetPartConsumption.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="elegantcrm7ToolsTransfer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>elegantcrm7ToolsTransfer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Image.aspx.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Image1.aspx.cs">
+      <DependentUpon>Image1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Image1.aspx.designer.cs">
+      <DependentUpon>Image1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Image2.aspx.cs">
+      <DependentUpon>Image2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Image2.aspx.designer.cs">
+      <DependentUpon>Image2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inbox\Inbox.aspx.cs">
+      <DependentUpon>Inbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inbox\Inbox.aspx.designer.cs">
+      <DependentUpon>Inbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inbox\InboxPOR.aspx.cs">
+      <DependentUpon>InboxPOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inbox\InboxPOR.aspx.designer.cs">
+      <DependentUpon>InboxPOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inbox\PORInbox.aspx.cs">
+      <DependentUpon>PORInbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inbox\PORInbox.aspx.designer.cs">
+      <DependentUpon>PORInbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\CustomProfile.cs" />
+    <Compile Include="Login\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Personal.cs" />
+    <Compile Include="Login\Profile.cs" />
+    <Compile Include="MasterPage\CRM.Master.cs">
+      <DependentUpon>CRM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\CRM.Master.designer.cs">
+      <DependentUpon>CRM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\CRM2.Master.cs">
+      <DependentUpon>CRM2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\CRM2.Master.designer.cs">
+      <DependentUpon>CRM2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PopupMessages\clsWebMsgBox.cs" />
+    <Compile Include="PopupMessages\PopupMessage.cs" />
+    <Compile Include="POR\AssetMaster.aspx.cs">
+      <DependentUpon>AssetMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\AssetMaster.aspx.designer.cs">
+      <DependentUpon>AssetMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\DashboardPOR.aspx.cs">
+      <DependentUpon>DashboardPOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\DashboardPOR.aspx.designer.cs">
+      <DependentUpon>DashboardPOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\Dashboard_Enginewise.aspx.cs">
+      <DependentUpon>Dashboard_Enginewise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\Dashboard_Enginewise.aspx.designer.cs">
+      <DependentUpon>Dashboard_Enginewise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\EngineMaster.aspx.cs">
+      <DependentUpon>EngineMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\EngineMaster.aspx.designer.cs">
+      <DependentUpon>EngineMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\PORHome.aspx.cs">
+      <DependentUpon>PORHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\PORHome.aspx.designer.cs">
+      <DependentUpon>PORHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\Reports\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\Reports\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\SiteMaster.aspx.cs">
+      <DependentUpon>SiteMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\SiteMaster.aspx.designer.cs">
+      <DependentUpon>SiteMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POR\ToolTransfer.aspx.cs">
+      <DependentUpon>ToolTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POR\ToolTransfer.aspx.designer.cs">
+      <DependentUpon>ToolTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\CommonReport.aspx.cs">
+      <DependentUpon>CommonReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\CommonReport.aspx.designer.cs">
+      <DependentUpon>CommonReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\GridConsumptionSummary.aspx.cs">
+      <DependentUpon>GridConsumptionSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\GridConsumptionSummary.aspx.designer.cs">
+      <DependentUpon>GridConsumptionSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\GridHQReceiptSummary.aspx.cs">
+      <DependentUpon>GridHQReceiptSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\GridHQReceiptSummary.aspx.designer.cs">
+      <DependentUpon>GridHQReceiptSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\GridIssueSummary.aspx.cs">
+      <DependentUpon>GridIssueSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\GridIssueSummary.aspx.designer.cs">
+      <DependentUpon>GridIssueSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\GridReceiptSummary.aspx.cs">
+      <DependentUpon>GridReceiptSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\GridReceiptSummary.aspx.designer.cs">
+      <DependentUpon>GridReceiptSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\GridRequestSummary.aspx.cs">
+      <DependentUpon>GridRequestSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\GridRequestSummary.aspx.designer.cs">
+      <DependentUpon>GridRequestSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\HQGoodsReceiptEntry.aspx.cs">
+      <DependentUpon>HQGoodsReceiptEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\HQGoodsReceiptEntry.aspx.designer.cs">
+      <DependentUpon>HQGoodsReceiptEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\PartConsumptionEntry.aspx.cs">
+      <DependentUpon>PartConsumptionEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\PartConsumptionEntry.aspx.designer.cs">
+      <DependentUpon>PartConsumptionEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\PartIssueEntry.aspx.cs">
+      <DependentUpon>PartIssueEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\PartIssueEntry.aspx.designer.cs">
+      <DependentUpon>PartIssueEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\PartReceiptEntry.aspx.cs">
+      <DependentUpon>PartReceiptEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\PartReceiptEntry.aspx.designer.cs">
+      <DependentUpon>PartReceiptEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\PartRequestEntry.aspx.cs">
+      <DependentUpon>PartRequestEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\PartRequestEntry.aspx.designer.cs">
+      <DependentUpon>PartRequestEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\PORPartSearch.aspx.cs">
+      <DependentUpon>PORPartSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\PORPartSearch.aspx.designer.cs">
+      <DependentUpon>PORPartSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\TestFilter.aspx.cs">
+      <DependentUpon>TestFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\TestFilter.aspx.designer.cs">
+      <DependentUpon>TestFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\TransferFrmSite.aspx.cs">
+      <DependentUpon>TransferFrmSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\TransferFrmSite.aspx.designer.cs">
+      <DependentUpon>TransferFrmSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOnRent\UCCommonFilter.ascx.cs">
+      <DependentUpon>UCCommonFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PowerOnRent\UCCommonFilter.ascx.designer.cs">
+      <DependentUpon>UCCommonFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductBalance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductBalance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductCategoryMaster.aspx.cs">
+      <DependentUpon>ProductCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductCategoryMaster.aspx.designer.cs">
+      <DependentUpon>ProductCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductMaster.aspx.cs">
+      <DependentUpon>ProductMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductMaster.aspx.designer.cs">
+      <DependentUpon>ProductMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductSearch.aspx.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductSearch.aspx.designer.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ProductSubCategoryMaster.aspx.cs">
+      <DependentUpon>ProductSubCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ProductSubCategoryMaster.aspx.designer.cs">
+      <DependentUpon>ProductSubCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\UCProductSearch.ascx.cs">
+      <DependentUpon>UCProductSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\UCProductSearch.ascx.designer.cs">
+      <DependentUpon>UCProductSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\UOM.aspx.cs">
+      <DependentUpon>UOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\UOM.aspx.designer.cs">
+      <DependentUpon>UOM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceiptDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AddressInfoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ApprovalLevelMasterService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BindMenuService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CompanySetupService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DepartmentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DesignationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DocumentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InboxService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LoginService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORDashboardService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServiceEngineMaster\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServiceHQGoodsReceipt\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServicePartConsumption\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServicePartIssue\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServicePartReceipts\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServicePartRequest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServiceSiteMaster\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PORServiceUCCommonFilter\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProductCategoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProductMasterService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProductSubCategoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProductUOMService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RoleMasterService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceTerritory\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ToolbarService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UCProductSearchService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UC_ApprovalService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserCreationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SiteTransfer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteTransfer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Territory\TestTR.aspx.cs">
+      <DependentUpon>TestTR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Territory\TestTR.aspx.designer.cs">
+      <DependentUpon>TestTR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Territory\UC_Territory.ascx.cs">
+      <DependentUpon>UC_Territory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Territory\UC_Territory.ascx.designer.cs">
+      <DependentUpon>UC_Territory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\DepartmentMaster.aspx.cs">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement\DepartmentMaster.aspx.designer.cs">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\DesignationMaster.aspx.cs">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement\DesignationMaster.aspx.designer.cs">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\ProfileSetting.aspx.cs">
+      <DependentUpon>ProfileSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement\ProfileSetting.aspx.designer.cs">
+      <DependentUpon>ProfileSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\RoleMaster.aspx.cs">
+      <DependentUpon>RoleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement\RoleMaster.aspx.designer.cs">
+      <DependentUpon>RoleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\UserCreation.aspx.cs">
+      <DependentUpon>UserCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement\UserCreation.aspx.designer.cs">
+      <DependentUpon>UserCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Blue\Blue.skin" />
+    <Content Include="MasterPage\CRM.Master" />
+    <Content Include="MasterPage\CRM2.Master" />
+    <None Include="Product\TempImg\z1hswiejspzftbexwzzt2ixa634805676463013982.octet-stream" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POR\Reports\ConsumableTracker.rdlc" />
+    <EmbeddedResource Include="POR\Reports\PartConsumptionList.rdlc" />
+    <EmbeddedResource Include="POR\Reports\PartIssueList.rdlc" />
+    <EmbeddedResource Include="POR\Reports\PartReceiptList.rdlc" />
+    <EmbeddedResource Include="POR\Reports\PartRequestList.rdlc" />
+    <EmbeddedResource Include="POR\Reports\PartStockList.rdlc" />
+    <EmbeddedResource Include="POR\Reports\ProductBalance.rdlc" />
+    <EmbeddedResource Include="POR\Reports\PrReportMonthly.rdlc" />
+    <EmbeddedResource Include="POR\Reports\SiteWiseConsumption.rdlc" />
+    <EmbeddedResource Include="POR\Reports\TransferRpt.rdlc" />
+    <EmbeddedResource Include="POR\Reports\WeeklyAnalysis.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonControls\Inbox\" />
+    <Folder Include="Document\Attach_Document\" />
+    <Folder Include="Document\TempAttach_Document\5\" />
+    <Folder Include="Document\TempAttach_Document\8\" />
+    <Folder Include="MasterPage\Logo\NewFolder1\" />
+    <Folder Include="Product\ProductImage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AddressInfoService\" />
+    <WCFMetadataStorage Include="Service References\ApprovalLevelMasterService\" />
+    <WCFMetadataStorage Include="Service References\BindMenuService\" />
+    <WCFMetadataStorage Include="Service References\CompanySetupService\" />
+    <WCFMetadataStorage Include="Service References\DepartmentService\" />
+    <WCFMetadataStorage Include="Service References\DesignationService\" />
+    <WCFMetadataStorage Include="Service References\DocumentService\" />
+    <WCFMetadataStorage Include="Service References\InboxService\" />
+    <WCFMetadataStorage Include="Service References\LoginService\" />
+    <WCFMetadataStorage Include="Service References\PORDashboardService\" />
+    <WCFMetadataStorage Include="Service References\PORServiceEngineMaster\" />
+    <WCFMetadataStorage Include="Service References\PORServiceHQGoodsReceipt\" />
+    <WCFMetadataStorage Include="Service References\PORServicePartConsumption\" />
+    <WCFMetadataStorage Include="Service References\PORServicePartIssue\" />
+    <WCFMetadataStorage Include="Service References\PORServicePartReceipts\" />
+    <WCFMetadataStorage Include="Service References\PORServicePartRequest\" />
+    <WCFMetadataStorage Include="Service References\PORServiceSiteMaster\" />
+    <WCFMetadataStorage Include="Service References\PORServiceUCCommonFilter\" />
+    <WCFMetadataStorage Include="Service References\ProductCategoryService\" />
+    <WCFMetadataStorage Include="Service References\ProductMasterService\" />
+    <WCFMetadataStorage Include="Service References\ProductSubCategoryService\" />
+    <WCFMetadataStorage Include="Service References\ProductUOMService\" />
+    <WCFMetadataStorage Include="Service References\RoleMasterService\" />
+    <WCFMetadataStorage Include="Service References\ServiceTerritory\" />
+    <WCFMetadataStorage Include="Service References\ToolbarService\" />
+    <WCFMetadataStorage Include="Service References\UCProductSearchService\" />
+    <WCFMetadataStorage Include="Service References\UC_ApprovalService\" />
+    <WCFMetadataStorage Include="Service References\UserCreationService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4619</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

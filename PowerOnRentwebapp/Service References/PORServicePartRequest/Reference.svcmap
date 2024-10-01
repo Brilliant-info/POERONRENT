@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dcacd84a-b01c-4bd9-8b44-28e71e6179b8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.PowerOnRent/ServicePartRequest.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicePartRequest.disco" MetadataType="Disco" ID="8da65ad8-ea70-4fa2-8a93-32e9bb001478" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.PowerOnRent/ServicePartRequest.svc?disco" />
+    <MetadataFile FileName="ServicePartRequest.wsdl" MetadataType="Wsdl" ID="1208a702-b539-4677-aa17-da2cb869cfd1" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.PowerOnRent/ServicePartRequest.svc?wsdl" />
+    <MetadataFile FileName="ServicePartRequest.xsd" MetadataType="Schema" ID="b32d6d6f-d400-4754-9672-ce5fc31225cd" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.PowerOnRent/ServicePartRequest.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

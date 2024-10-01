@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="84deda9b-53a6-492b-95b2-b6718b4c6cf2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.PowerOnRent/ServiceUCCommonFilter.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceUCCommonFilter1.xsd" MetadataType="Schema" ID="82bac888-f174-437d-8811-1094f4ef61dc" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.PowerOnRent/ServiceUCCommonFilter.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceUCCommonFilter1.wsdl" MetadataType="Wsdl" ID="d8f1ef7f-e902-4ae5-8451-aa6499c0834e" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.PowerOnRent/ServiceUCCommonFilter.svc?wsdl" />
+    <MetadataFile FileName="ServiceUCCommonFilter1.disco" MetadataType="Disco" ID="db42a628-c946-43e2-86d3-b0db476fe971" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.PowerOnRent/ServiceUCCommonFilter.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

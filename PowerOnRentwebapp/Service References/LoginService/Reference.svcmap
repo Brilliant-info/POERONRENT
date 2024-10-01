@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d979860f-b77a-4339-98b7-52fdb074520f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/poweronrentservices/Service.Login/Login.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Login2.wsdl" MetadataType="Wsdl" ID="314be937-efd2-4535-b8c1-0e83cd071a78" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Login/Login.svc?wsdl" />
+    <MetadataFile FileName="Login2.xsd" MetadataType="Schema" ID="0fb2e0b8-5f20-498e-98db-a5f680facc9d" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Login/Login.svc?xsd=xsd0" />
+    <MetadataFile FileName="Login2.disco" MetadataType="Disco" ID="937fccd9-6dac-41a2-b83d-58d5c9a2cd3b" SourceId="1" SourceUrl="http://localhost/poweronrentservices/Service.Login/Login.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
